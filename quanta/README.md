@@ -1,10 +1,10 @@
 # Quanta integration in Front-Commerce
 
-This example module illustrates how to forward HTTP headers from [Quanta](https://www.quanta.io/) attackers to Magento.
+This example module illustrates how to forward HTTP headers from [Quanta](https://www.quanta.io/) browsers to Magento.
 
 ## Why?
 
-When load testing an application using Quanta, attackers attach a `x-quanta` HTTP header to each request. This header is then used in Magento servers as a correlation id, to provide detailed metrics on the impact the load has on Magento.
+When load testing an application using Quanta, browsers attach a `x-quanta` HTTP header to each request. This header is then used in Magento servers as a correlation id, to provide detailed metrics on the impact the load has on Magento.
 
 ## What?
 
@@ -33,7 +33,7 @@ This provider customizes the `magento.api.extraHeaders` configuration to include
 
 ## Test
 
-You can simulate an HTTP request from Quanta attackers with the following `curl` command:
+You can simulate an HTTP request from Quanta browsers with the following `curl` command:
 ```
 curl -I http://localhost:4000/ -H "x-quanta: 2801 1680261120 magento"
 ```
