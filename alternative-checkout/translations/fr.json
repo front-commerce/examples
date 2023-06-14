@@ -1,0 +1,4 @@
+{
+  "modules.Checkout.ShippingMethod.ChooseShippingMethod.noShippingAddress": "Veuillez sélectionner une adresse de livraison pour choisir votre méthode de livraison.",
+  "pages.Checkout.addressAndShippingProgressLabel": "Adresse et livraison"
+}
