@@ -1,0 +1,9 @@
+extend type Query {
+  contactPage: ContentfulPage
+  marketingPage(slug: String!): ContentfulPage
+}
+
+type ContentfulPage {
+  title: String
+  slug: String
+}

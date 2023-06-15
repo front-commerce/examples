@@ -1,0 +1,6 @@
+query ContentQuery($slug: String!) {
+  marketingPage(slug: $slug) {
+    title
+    slug
+  }
+}
