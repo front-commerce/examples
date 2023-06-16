@@ -1,0 +1,4 @@
+{
+  "modules.Checkout.ShippingMethod.ChooseShippingMethod.noShippingAddress": "Please select a shipping address before choosing a shipping method.",
+  "pages.Checkout.addressAndShippingProgressLabel": "Address and shipping"
+}
