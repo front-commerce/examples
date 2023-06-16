@@ -1,0 +1,6 @@
+query ContactQuery {
+  contactPage {
+    title
+    slug
+  }
+}

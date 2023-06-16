@@ -1,0 +1,1949 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2023-05-25T13:30:25.946Z",
+        "updatedAt": "2023-05-25T13:31:03.080Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-05-25T13:31:03.080Z",
+        "firstPublishedAt": "2023-05-25T13:30:26.648Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Page",
+      "description": "A simple content page",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "testImage",
+        "type": "ContentType",
+        "createdAt": "2023-06-08T12:30:25.484Z",
+        "updatedAt": "2023-06-08T12:30:25.798Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-08T12:30:25.798Z",
+        "firstPublishedAt": "2023-06-08T12:30:25.798Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": null,
+      "name": "Test image",
+      "description": "",
+      "fields": [
+        {
+          "id": "file",
+          "name": "file",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-05-25T13:30:26.837Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-05-25T13:31:03.775Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-06-08T12:30:25.893Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-08T12:30:26.426Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "testImage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "file",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "dntmgP2QV6uRuRChrdLFj",
+        "type": "Entry",
+        "createdAt": "2023-05-25T13:31:06.841Z",
+        "updatedAt": "2023-06-14T12:08:01.036Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 44,
+        "publishedAt": "2023-06-14T12:08:01.036Z",
+        "firstPublishedAt": "2023-05-25T13:31:34.827Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 45,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contact us"
+        },
+        "slug": {
+          "en-US": "contact-us"
+        },
+        "content": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is the ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "contact us",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " page.\nThis part of the page is managed in Contentful, but the form below is a native Front-Commerce feature.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "It shows how a Front-Commerce page can contain both dynamic (marketing) and static (code) content.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Note: you can browse content pages entirely managed in Contentful at ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "6yz6TN4SZqqmTEwOMUStrm",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Test page",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " or ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2ZUorY60vRl3dLScZCfrHL",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Explore Our Product Categories",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "6yz6TN4SZqqmTEwOMUStrm",
+        "type": "Entry",
+        "createdAt": "2023-06-14T11:50:53.500Z",
+        "updatedAt": "2023-06-14T12:05:25.025Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 54,
+        "publishedAt": "2023-06-14T12:05:25.025Z",
+        "firstPublishedAt": "2023-06-14T12:02:30.163Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 55,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Test page"
+        },
+        "slug": {
+          "en-US": "test-page"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "heading-1",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Front-Commerce and Contentful Integration!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Front-Commerce is an innovative e-commerce solution that seamlessly integrates with Contentful, a powerful content management platform. This integration allows you to leverage the full potential of Contentful's RichText features while building captivating and dynamic online shopping experiences.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Let's explore how Front-Commerce integrates with Contentful and makes use of its rich content capabilities. There is ",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "entry-hyperlink",
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2ZUorY60vRl3dLScZCfrHL",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "another test page too",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "!",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "1. Headings:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Front-Commerce understands the importance of clear headings to organize and structure your content. With Contentful's RichText, you can easily create headings of different levels, from H1 to H6, ensuring your content hierarchy is visually appealing and search engine optimized.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:\n",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "<H1>Welcome to Our Online Store!</H1>\n<H2>Discover Amazing Deals Every Day</H2>\n<H3>Shop the Latest Fashion Trends</H3>",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-1",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Welcome to Our Online Store!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Discover Amazing Deals Every Day",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Shop the Latest Fashion Trends",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-4",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Heading 4",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-5",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Heading 5",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-6",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Heading 6\n",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "2. Paragraphs:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Contentful's RichText allows you to create ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "engaging paragraphs",
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " with varied text formatting options. Whether it's adding ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://www.front-commerce.com/"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "links",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", emphasizing text with ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "bold",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " or ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "italic",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " styling, or even creating lists, Front-Commerce seamlessly renders your content as intended.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "At Front-Commerce, we believe in providing the best online shopping experience for our customers. Our wide range of products includes clothing, accessories, electronics, and much more. Browse through our collection and find exactly what you need.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "hr",
+                "data": {
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Our team works tirelessly to curate the latest fashion trends, ensuring you're always ahead of the curve. Whether you're looking for casual wear or formal attire, we have you covered. Explore our diverse catalog and express your unique style.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Why choose us? Here are a few reasons:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "High-quality products",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Secure online transactions",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Fast and reliable shipping",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Responsive customer support",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "3. Images:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Visual content plays a crucial role in attracting customers. With Contentful's RichText, you can easily embed images within your text, providing a visually appealing and engaging experience. Front-Commerce seamlessly integrates these images, ensuring they are displayed optimally on your online store.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:\nCheck out our latest collection of pen and paper:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "4eQzygWlfjDxYgX3OW7v1O",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "4. Quotes:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Quotes can add credibility and highlight important information. With Contentful's RichText, you can easily create stylized quotes to emphasize key messages and capture the attention of your audience.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "blockquote",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Front-Commerce has revolutionized our online store. The integration with Contentful allows us to create compelling content and deliver a seamless shopping experience to our customers. Highly recommended!",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "5. Code snippets:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "For technical content or when discussing code-related topics, Contentful's RichText supports the inclusion of code snippets. Front-Commerce ensures that these code blocks are properly formatted and displayed to convey your message effectively.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "To retrieve product details, use the following code:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "const productId = '12345';\nconst product = getProductDetails(productId);\nconsole.log(product);\n",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "These examples demonstrate just a few of the powerful features provided by Contentful's RichText integration with Front-Commerce. With this seamless integration, you can create captivating and dynamic online shopping experiences while leveraging the full potential of Contentful's content management capabilities. Explore the possibilities and unleash the true potential of your e-commerce store with Front-Commerce and Contentful!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "2ZUorY60vRl3dLScZCfrHL",
+        "type": "Entry",
+        "createdAt": "2023-06-14T12:02:47.484Z",
+        "updatedAt": "2023-06-14T12:04:46.665Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2023-06-14T12:04:46.665Z",
+        "firstPublishedAt": "2023-06-14T12:04:46.665Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Explore Our Product Categories"
+        },
+        "slug": {
+          "en-US": "explore-our-product-categories"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Welcome to our online store! We offer a wide range of high-quality products to cater to your needs. Explore our diverse product categories and find the perfect items for yourself or your loved ones. Take a look at what we have to offer:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Clothing",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Discover fashionable clothing options for every occasion. From casual wear to formal attire, we have a variety of styles to suit your taste. Stay trendy and comfortable with our collection of stylish garments.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Electronics",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Upgrade your tech game with our cutting-edge electronics. From smartphones and laptops to smart home devices and accessories, we have the latest gadgets to enhance your digital lifestyle.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Home Decor",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Make your living spaces truly yours with our exquisite home decor collection. From elegant furniture pieces to decorative accents, our curated selection will transform your house into a cozy and stylish home.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Beauty and Skincare",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Pamper yourself with our premium beauty and skincare products. Discover a wide range of cosmetics, skincare essentials, and self-care items to enhance your natural beauty and well-being.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Sports and Fitness",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Stay active and achieve your fitness goals with our sports and fitness gear. Whether you're into yoga, running, or weightlifting, we have the equipment and apparel to support your active lifestyle.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Toys and Games",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Ignite your imagination and have fun with our collection of toys and games. From educational toys for kids to board games for family gatherings, we have entertainment options for all ages.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Books and Stationery",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": ": Immerse yourself in captivating stories and expand your knowledge with our selection of books. Find inspiration in our stationery section with notebooks, pens, and art supplies to unleash your creativity.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Explore each category to find detailed product listings, customer reviews, and additional information. We constantly update our inventory, so check back regularly for new arrivals and exciting promotions.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Start your shopping journey now and experience the convenience and joy of online shopping with us!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Please note that this content is entirely fictional and is used for demonstration purposes only.",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "5moxc3E5yndUYuuUPVZE3R",
+        "type": "Asset",
+        "createdAt": "2023-06-08T12:30:35.338Z",
+        "updatedAt": "2023-06-08T12:30:45.239Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-06-08T12:30:45.239Z",
+        "firstPublishedAt": "2023-06-08T12:30:45.239Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "2023-06-07 16-01"
+        },
+        "description": {
+          "en-US": "auieu"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zhhfzs0llupn/5moxc3E5yndUYuuUPVZE3R/e50e80d6b01e30877d01f68df6c828f9/2023-06-07_16-01.png",
+            "details": {
+              "size": 23083,
+              "image": {
+                "width": 565,
+                "height": 400
+              }
+            },
+            "fileName": "2023-06-07_16-01.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "4eQzygWlfjDxYgX3OW7v1O",
+        "type": "Asset",
+        "createdAt": "2023-06-14T11:58:15.622Z",
+        "updatedAt": "2023-06-14T11:59:34.512Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2023-06-14T11:59:34.512Z",
+        "firstPublishedAt": "2023-06-14T11:59:34.512Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Person preparing content"
+        },
+        "description": {
+          "en-US": "This is how we write content at Front-Commerce: first on paper, then we draft online, refine and publish."
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zhhfzs0llupn/4eQzygWlfjDxYgX3OW7v1O/4ae9b002f689e2900dde406ea1f0714c/pexels-judit-peter-1766604.jpg",
+            "details": {
+              "size": 1810415,
+              "image": {
+                "width": 4256,
+                "height": 2848
+              }
+            },
+            "fileName": "pexels-judit-peter-1766604.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United Kingdom)",
+      "code": "en-GB",
+      "fallbackCode": "en-US",
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": true,
+      "sys": {
+        "type": "Locale",
+        "id": "5WIm3AlUihmTa42YFfZPG1",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "prod",
+            "uuid": "b8ca8559-17d7-4387-9c31-abc5fd80b8e6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "createdAt": "2023-06-05T15:37:11Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "updatedAt": "2023-06-05T15:37:11Z"
+      }
+    },
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "6YA4u6pBYuKKv6XLObw9JY",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "prod",
+            "uuid": "b8ca8559-17d7-4387-9c31-abc5fd80b8e6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "createdAt": "2023-05-25T13:28:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedAt": "2023-05-25T13:28:01Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ]
+}
