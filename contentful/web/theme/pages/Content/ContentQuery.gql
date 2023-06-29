@@ -1,6 +1,15 @@
+#import "theme/modules/SeoMetadata/SeoMetadataFragment.gql"
+#import "theme/modules/WysiwygV2/WysiwygFragment.gql"
+
 query ContentQuery($slug: String!) {
   marketingPage(slug: $slug) {
     title
     slug
+    content {
+      ...WysiwygFragment
+    }
+    seo {
+      ...SeoMetadataFragment
+    }
   }
 }

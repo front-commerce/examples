@@ -1,0 +1,8 @@
+fragment BlockCategoryProductsListFragment on BlockCategoryProductsList {
+  id
+  title
+  categoryId
+  numberOfProducts
+  actionText
+  actionUrl
+}
