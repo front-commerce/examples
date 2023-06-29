@@ -1,9 +1,54 @@
 extend type Query {
+  homePage: HomePage
   contactPage: ContentfulPage
   marketingPage(slug: String!): ContentfulPage
 }
 
-type ContentfulPage {
+type ContentfulPage @storefrontContent(extractorIdentifier: "ContentfulPage") {
   title: String
   slug: String
+  seo: SeoMetadata
+  content: Wysiwyg
+}
+
+type HomePage @storefrontContent(extractorIdentifier: "HomePage") {
+  title: String
+  seo: SeoMetadata
+  blocks: [HomePageBlocks]!
+}
+
+type SeoMetadata {
+  title: String
+  description: String
+  index: Boolean
+  follow: Boolean
+}
+
+union HomePageBlocks = BlockCarousel | BlockCategoryProductsList
+
+type BlockCarousel @storefrontContent(extractorIdentifier: "BlockCarousel") {
+  id: String
+  slides: [BlockCarouselSlide]
+}
+
+type BlockCarouselSlide {
+  title: String
+  text: String
+  link: String
+  image: String
+}
+
+type BlockCategoryProductsList
+  @storefrontContent(extractorIdentifier: "BlockCategoryProductsList") {
+  id: String
+  title: String
+  categoryId: String
+  numberOfProducts: Int
+  actionText: String
+  actionUrl: String
+}
+
+type WysiwygContentfulLinkData implements WysiwygNodeData {
+  dataId: ID
+  url: String
 }

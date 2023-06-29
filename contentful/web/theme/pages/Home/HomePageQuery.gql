@@ -1,0 +1,14 @@
+#import "theme/modules/Blocks/HomePageBlocks"
+#import "theme/modules/SeoMetadata/SeoMetadataFragment.gql"
+
+query HomePageQuery {
+  homePage {
+    title
+    seo {
+      ...SeoMetadataFragment
+    }
+    blocks {
+      ...HomePageBlocksFragment
+    }
+  }
+}

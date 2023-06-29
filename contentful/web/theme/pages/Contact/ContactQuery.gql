@@ -1,6 +1,11 @@
+#import "theme/modules/WysiwygV2/WysiwygFragment.gql"
+
 query ContactQuery {
   contactPage {
     title
     slug
+    content {
+      ...WysiwygFragment
+    }
   }
 }

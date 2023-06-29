@@ -12,7 +12,7 @@
         "id": "page",
         "type": "ContentType",
         "createdAt": "2023-05-25T13:30:25.946Z",
-        "updatedAt": "2023-05-25T13:31:03.080Z",
+        "updatedAt": "2023-06-19T11:17:19.167Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-05-25T13:31:03.080Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-06-19T11:17:19.167Z",
         "firstPublishedAt": "2023-05-25T13:30:26.648Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "3yZg8ljXaY2uDyPNjUqfco"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 4,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -123,6 +123,23 @@
           ],
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "seo",
+          "name": "SEO",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "seoMetadata"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
         }
       ]
     },
@@ -190,6 +207,799 @@
           "linkType": "Asset"
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "home",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:12:36.125Z",
+        "updatedAt": "2023-06-29T08:57:31.140Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2023-06-29T08:57:31.140Z",
+        "firstPublishedAt": "2023-06-19T11:12:36.549Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 9,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Home",
+      "description": "Home page",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seo",
+          "name": "SEO",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "seoMetadata"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "contentBlocks",
+          "name": "Content blocks",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCarousel",
+                  "blockCategoryProductsList",
+                  "blockProductsList",
+                  "blockPush"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "seoMetadata",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:14:52.098Z",
+        "updatedAt": "2023-06-28T08:42:53.774Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-06-28T08:42:53.774Z",
+        "firstPublishedAt": "2023-06-19T11:14:52.443Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        }
+      },
+      "displayField": "internalName",
+      "name": "SEO metadata",
+      "description": "Metadata for SEO purpose",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pageTitle",
+          "name": "Page title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pageDescription",
+          "name": "Page description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seoIndex",
+          "name": "SEO Index",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seoFollow",
+          "name": "SEO Follow",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockCarouselSlide",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:22:45.654Z",
+        "updatedAt": "2023-06-19T11:23:06.489Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-06-19T11:23:06.489Z",
+        "firstPublishedAt": "2023-06-19T11:22:46.004Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Block: carousel > slide",
+      "description": "A Slide image for a Carousel block",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "ctaText",
+          "name": "CTA text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaUrl",
+          "name": "CTA URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockCarousel",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:23:44.106Z",
+        "updatedAt": "2023-06-19T11:40:13.054Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-06-19T11:40:13.054Z",
+        "firstPublishedAt": "2023-06-19T11:23:44.356Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "internalName",
+      "name": "Block: carousel",
+      "description": "A Carousel block",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slides",
+          "name": "Slides",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCarouselSlide"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockCategoryProductsList",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:26:10.905Z",
+        "updatedAt": "2023-06-27T17:41:07.857Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-06-27T17:41:07.857Z",
+        "firstPublishedAt": "2023-06-19T11:26:11.159Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Block: category products list",
+      "description": "Display products from a category",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "categoryId",
+          "name": "Category ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "numberOfProducts",
+          "name": "Number of products",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "actionText",
+          "name": "Action Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "actionUrl",
+          "name": "Action URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockProductsList",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:28:03.968Z",
+        "updatedAt": "2023-06-19T11:32:55.196Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-06-19T11:32:55.196Z",
+        "firstPublishedAt": "2023-06-19T11:28:04.308Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Block: products list",
+      "description": "Displays a list of selected products",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "products",
+          "name": "Products",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockPush",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:29:08.396Z",
+        "updatedAt": "2023-06-19T11:29:08.714Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-19T11:29:08.714Z",
+        "firstPublishedAt": "2023-06-19T11:29:08.714Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "internalName",
+      "name": "Block: push",
+      "description": "Push content or main categories to visitors so that they could access them",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "blockPushItem",
+        "type": "ContentType",
+        "createdAt": "2023-06-19T11:31:59.917Z",
+        "updatedAt": "2023-06-19T11:32:00.356Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-19T11:32:00.356Z",
+        "firstPublishedAt": "2023-06-19T11:32:00.356Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Block: push > item",
+      "description": "Items to be pushed to users in a Push block.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "linkText",
+          "name": "Link text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkTarget",
+          "name": "Link target",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockFormat",
+          "name": "Block format",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "in": [
+                "pushBlock",
+                "pushBlockWide"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cellSize",
+          "name": "Cell size",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "in": [
+                "1",
+                "2",
+                "desktop-2"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
     }
   ],
   "tags": [
@@ -206,7 +1016,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 8,
         "createdAt": "2023-05-25T13:30:26.837Z",
         "createdBy": {
           "sys": {
@@ -215,7 +1025,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-05-25T13:31:03.775Z",
+        "updatedAt": "2023-06-19T11:17:19.945Z",
         "updatedBy": {
           "sys": {
             "id": "3yZg8ljXaY2uDyPNjUqfco",
@@ -252,6 +1062,11 @@
         {
           "fieldId": "content",
           "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "seo",
+          "widgetId": "entryLinkEditor",
           "widgetNamespace": "builtin"
         }
       ]
@@ -306,6 +1121,530 @@
           "widgetNamespace": "builtin"
         }
       ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 18,
+        "createdAt": "2023-06-19T11:12:36.677Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-29T08:57:31.880Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0xMP6maYt0Rz2RAMDhUVqD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "home",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "seo",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contentBlocks",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2023-06-19T11:14:52.606Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-28T08:42:55.451Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0xMP6maYt0Rz2RAMDhUVqD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "seoMetadata",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "pageDescription",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "seoIndex",
+          "settings": {
+            "helpText": "Index in search engines?",
+            "trueLabel": "Yes",
+            "falseLabel": "No"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "seoFollow",
+          "settings": {
+            "helpText": "Should search engines that it may follow links on the page?",
+            "trueLabel": "Yes",
+            "falseLabel": "No"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-06-19T11:22:46.219Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-19T11:23:07.065Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockCarouselSlide",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaUrl",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-06-19T11:23:44.470Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-19T11:40:13.795Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockCarousel",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slides",
+          "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-06-19T11:26:11.312Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-27T17:41:08.520Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0xMP6maYt0Rz2RAMDhUVqD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockCategoryProductsList",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categoryId",
+          "settings": {
+            "helpText": "Magento ID of the category"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "numberOfProducts",
+          "settings": {
+            "helpText": "Number of products to show in the list"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "actionText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "actionUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2023-06-19T11:28:04.459Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-19T11:32:55.811Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockProductsList",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "products",
+          "widgetId": "listInput",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-06-19T11:29:08.822Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-19T11:29:09.416Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockPush",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "zhhfzs0llupn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-06-19T11:32:00.528Z",
+        "createdBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-19T11:32:01.274Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3yZg8ljXaY2uDyPNjUqfco",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blockPushItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "linkText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "linkTarget",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "blockFormat",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cellSize",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
     }
   ],
   "entries": [
@@ -325,7 +1664,7 @@
         "id": "dntmgP2QV6uRuRChrdLFj",
         "type": "Entry",
         "createdAt": "2023-05-25T13:31:06.841Z",
-        "updatedAt": "2023-06-14T12:08:01.036Z",
+        "updatedAt": "2023-06-15T15:37:49.908Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -333,8 +1672,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 44,
-        "publishedAt": "2023-06-14T12:08:01.036Z",
+        "publishedVersion": 49,
+        "publishedAt": "2023-06-15T15:34:45.875Z",
         "firstPublishedAt": "2023-05-25T13:31:34.827Z",
         "createdBy": {
           "sys": {
@@ -350,8 +1689,8 @@
             "id": "3yZg8ljXaY2uDyPNjUqfco"
           }
         },
-        "publishedCounter": 3,
-        "version": 45,
+        "publishedCounter": 5,
+        "version": 52,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -371,7 +1710,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "Contact us"
+          "en-US": "Contact us v42"
         },
         "slug": {
           "en-US": "contact-us"
@@ -530,7 +1869,7 @@
         "id": "6yz6TN4SZqqmTEwOMUStrm",
         "type": "Entry",
         "createdAt": "2023-06-14T11:50:53.500Z",
-        "updatedAt": "2023-06-14T12:05:25.025Z",
+        "updatedAt": "2023-06-28T11:32:53.939Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -538,8 +1877,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 54,
-        "publishedAt": "2023-06-14T12:05:25.025Z",
+        "publishedVersion": 100,
+        "publishedAt": "2023-06-28T10:57:45.358Z",
         "firstPublishedAt": "2023-06-14T12:02:30.163Z",
         "createdBy": {
           "sys": {
@@ -552,16 +1891,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "3yZg8ljXaY2uDyPNjUqfco"
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
           }
         },
-        "publishedCounter": 2,
-        "version": 55,
+        "publishedCounter": 6,
+        "version": 104,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "3yZg8ljXaY2uDyPNjUqfco"
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
           }
         },
         "automationTags": [
@@ -576,7 +1915,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "Test page"
+          "en-US": "This is a test page !"
         },
         "slug": {
           "en-US": "test-page"
@@ -595,6 +1934,21 @@
                   {
                     "nodeType": "text",
                     "value": "Front-Commerce and Contentful Integration!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-1",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "This is Awesome!!!!",
                     "marks": [
                     ],
                     "data": {
@@ -708,26 +2062,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Example:\n",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
-                  },
-                  {
-                    "nodeType": "text",
-                    "value": "<H1>Welcome to Our Online Store!</H1>\n<H2>Discover Amazing Deals Every Day</H2>\n<H3>Shop the Latest Fashion Trends</H3>",
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "data": {
-                    }
-                  },
-                  {
-                    "nodeType": "text",
-                    "value": "\n",
+                    "value": "Example:",
                     "marks": [
                     ],
                     "data": {
@@ -742,7 +2077,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Welcome to Our Online Store!",
+                    "value": "Heading 1",
                     "marks": [
                     ],
                     "data": {
@@ -757,7 +2092,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Discover Amazing Deals Every Day",
+                    "value": "Heading 2",
                     "marks": [
                     ],
                     "data": {
@@ -772,7 +2107,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Shop the Latest Fashion Trends",
+                    "value": "Heading 3",
                     "marks": [
                     ],
                     "data": {
@@ -1316,8 +2651,200 @@
                     }
                   }
                 ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "6. Links:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "The power of connectivity provided by the internet enables businesses to guide users seamlessly through their content. With Contentful's RichText, you can easily include both internal and external links in your content. Front-Commerce makes sure these links function as intended, guiding customers exactly where you want them to go.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example:\nWith our latest collection, we're offering an exclusive discount on all purchases made in the first week. Navigate to our Promotions page to learn more. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Discover the wide range of products available in our ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "/gear.html"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Gear Section",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". From the latest gadgets to essential home appliances, we've got everything you need.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Intrigued about how we source our products? Learn about our commitment to sustainable practices on our ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "entry-hyperlink",
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2ZUorY60vRl3dLScZCfrHL",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Sustainability Page",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "For fashion tips and inspiration, check out our favorite style blog, ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "http://www.thefashionforward.com"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "The Fashion Forward",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "This integration of Contentful's RichText with Front-Commerce ensures that your customers are always just a click away from the content you want them to explore. From internal pages to external resources, make your online store a hub of information with this powerful feature.\n",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
               }
             ]
+          }
+        },
+        "seo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7HAQawwwBjhImc1lBTYZ7v"
+            }
           }
         }
       }
@@ -1338,7 +2865,7 @@
         "id": "2ZUorY60vRl3dLScZCfrHL",
         "type": "Entry",
         "createdAt": "2023-06-14T12:02:47.484Z",
-        "updatedAt": "2023-06-14T12:04:46.665Z",
+        "updatedAt": "2023-06-19T11:02:10.038Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1364,7 +2891,7 @@
           }
         },
         "publishedCounter": 1,
-        "version": 15,
+        "version": 17,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1391,313 +2918,886 @@
         },
         "content": {
           "en-US": {
-            "nodeType": "document",
             "data": {
             },
             "content": [
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
+                    "data": {
+                    },
+                    "marks": [
+                    ],
                     "value": "Welcome to our online store! We offer a wide range of high-quality products to cater to your needs. Explore our diverse product categories and find the perfect items for yourself or your loved ones. Take a look at what we have to offer:",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "ordered-list",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Clothing",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                            ],
                             "value": ": Discover fashionable clothing options for every occasion. From casual wear to formal attire, we have a variety of styles to suit your taste. Stay trendy and comfortable with our collection of stylish garments.",
-                            "marks": [
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Electronics",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                            ],
                             "value": ": Upgrade your tech game with our cutting-edge electronics. From smartphones and laptops to smart home devices and accessories, we have the latest gadgets to enhance your digital lifestyle.",
-                            "marks": [
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Home Decor",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                            ],
                             "value": ": Make your living spaces truly yours with our exquisite home decor collection. From elegant furniture pieces to decorative accents, our curated selection will transform your house into a cozy and stylish home.",
-                            "marks": [
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Beauty and Skincare",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                            ],
                             "value": ": Pamper yourself with our premium beauty and skincare products. Discover a wide range of cosmetics, skincare essentials, and self-care items to enhance your natural beauty and well-being.",
-                            "marks": [
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Sports and Fitness",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                            ],
                             "value": ": Stay active and achieve your fitness goals with our sports and fitness gear. Whether you're into yoga, running, or weightlifting, we have the equipment and apparel to support your active lifestyle.",
-                            "marks": [
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
                             "value": "Toys and Games",
-                            "marks": [
-                              {
-                                "type": "bold"
-                              }
-                            ],
-                            "data": {
-                            }
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
-                            "value": ": Ignite your imagination and have fun with our collection of toys and games. From educational toys for kids to board games for family gatherings, we have entertainment options for all ages.",
+                            "data": {
+                            },
                             "marks": [
                             ],
-                            "data": {
-                            }
+                            "value": ": Ignite your imagination and have fun with our collection of toys and games. From educational toys for kids to board games for family gatherings, we have entertainment options for all ages.",
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   },
                   {
-                    "nodeType": "list-item",
                     "data": {
                     },
                     "content": [
                       {
-                        "nodeType": "paragraph",
                         "data": {
                         },
                         "content": [
                           {
-                            "nodeType": "text",
-                            "value": "Books and Stationery",
+                            "data": {
+                            },
                             "marks": [
                               {
                                 "type": "bold"
                               }
                             ],
-                            "data": {
-                            }
+                            "value": "Books and Stationery",
+                            "nodeType": "text"
                           },
                           {
-                            "nodeType": "text",
-                            "value": ": Immerse yourself in captivating stories and expand your knowledge with our selection of books. Find inspiration in our stationery section with notebooks, pens, and art supplies to unleash your creativity.",
+                            "data": {
+                            },
                             "marks": [
                             ],
-                            "data": {
-                            }
+                            "value": ": Immerse yourself in captivating stories and expand your knowledge with our selection of books. Find inspiration in our stationery section with notebooks, pens, and art supplies to unleash your creativity.",
+                            "nodeType": "text"
                           }
-                        ]
+                        ],
+                        "nodeType": "paragraph"
                       }
-                    ]
+                    ],
+                    "nodeType": "list-item"
                   }
-                ]
+                ],
+                "nodeType": "ordered-list"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
+                    "data": {
+                    },
+                    "marks": [
+                    ],
                     "value": "Explore each category to find detailed product listings, customer reviews, and additional information. We constantly update our inventory, so check back regularly for new arrivals and exciting promotions.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
+                    "data": {
+                    },
+                    "marks": [
+                    ],
                     "value": "Start your shopping journey now and experience the convenience and joy of online shopping with us!",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "Please note that this content is entirely fictional and is used for demonstration purposes only.",
+                    "data": {
+                    },
                     "marks": [
                       {
                         "type": "italic"
                       }
                     ],
-                    "data": {
-                    }
+                    "value": "Please note that this content is entirely fictional and is used for demonstration purposes only.",
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               }
-            ]
+            ],
+            "nodeType": "document"
           }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "3Wxyqc0G6XqWAOHxPUKy8k",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:33:43.531Z",
+        "updatedAt": "2023-06-26T18:10:48.494Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2023-06-26T18:10:48.494Z",
+        "firstPublishedAt": "2023-06-19T11:34:07.331Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "home"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Front-Commerce: Magento2 × Contentful demo"
+        },
+        "seo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7IsR492O0e4fv5e5jraW3h"
+            }
+          }
+        },
+        "contentBlocks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3vr67F1aT8sJdW4ED4sCSj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Cigm5vyjIhBMLodlqMa0W"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "7IsR492O0e4fv5e5jraW3h",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:34:11.949Z",
+        "updatedAt": "2023-06-28T08:43:10.432Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2023-06-28T08:43:10.432Z",
+        "firstPublishedAt": "2023-06-19T11:35:11.002Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "seoMetadata"
+          }
+        }
+      },
+      "fields": {
+        "internalName": {
+          "en-US": "Homepage"
+        },
+        "pageTitle": {
+          "en-US": "Front-Commerce: Magento2 × Contentful demonstration"
+        },
+        "pageDescription": {
+          "en-US": "Demonstration of Front-Commerce headless storefront as a service, with Magento2 & Contentful backends."
+        },
+        "seoIndex": {
+          "en-US": false
+        },
+        "seoFollow": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "3vr67F1aT8sJdW4ED4sCSj",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:35:21.022Z",
+        "updatedAt": "2023-06-19T11:40:31.493Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-06-19T11:40:31.493Z",
+        "firstPublishedAt": "2023-06-19T11:39:29.406Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blockCarousel"
+          }
+        }
+      },
+      "fields": {
+        "internalName": {
+          "en-US": "Carousel HP"
+        },
+        "slides": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "43rqKtmAxEkobzpe00moYu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "53BEmHoXn8ByvzlYpCZXuw"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "43rqKtmAxEkobzpe00moYu",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:36:18.615Z",
+        "updatedAt": "2023-06-28T11:31:32.376Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-06-19T11:37:29.737Z",
+        "firstPublishedAt": "2023-06-19T11:37:29.737Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blockCarouselSlide"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sale of the summer collection"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1OjluTvNUheqmuzuMTcEiS"
+            }
+          }
+        },
+        "ctaText": {
+          "en-US": "Shop now"
+        },
+        "ctaUrl": {
+          "en-US": "/women/tops-women.html"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "53BEmHoXn8ByvzlYpCZXuw",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:37:42.471Z",
+        "updatedAt": "2023-06-19T11:39:24.324Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-06-19T11:39:24.324Z",
+        "firstPublishedAt": "2023-06-19T11:39:24.324Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blockCarouselSlide"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Second sale of the summer collection"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1kqpJMnu8qRKpWoLeMIoku"
+            }
+          }
+        },
+        "ctaText": {
+          "en-US": "Start shopping"
+        },
+        "ctaUrl": {
+          "en-US": "/men/tops-men.html"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "7Cigm5vyjIhBMLodlqMa0W",
+        "type": "Entry",
+        "createdAt": "2023-06-19T11:41:03.392Z",
+        "updatedAt": "2023-06-28T11:32:09.413Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-06-27T17:41:46.454Z",
+        "firstPublishedAt": "2023-06-19T11:41:50.997Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blockCategoryProductsList"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Suggested for everyone"
+        },
+        "categoryId": {
+          "en-US": "7"
+        },
+        "numberOfProducts": {
+          "en-US": "4"
+        },
+        "actionText": {
+          "en-US": "Show everything"
+        },
+        "actionUrl": {
+          "en-US": "/gear/watches.html"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "7HAQawwwBjhImc1lBTYZ7v",
+        "type": "Entry",
+        "createdAt": "2023-06-28T09:25:03.804Z",
+        "updatedAt": "2023-06-28T09:26:01.556Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-06-28T09:26:01.556Z",
+        "firstPublishedAt": "2023-06-28T09:26:01.556Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "seoMetadata"
+          }
+        }
+      },
+      "fields": {
+        "internalName": {
+          "en-US": "Test Page Seo"
+        },
+        "pageTitle": {
+          "en-US": "This is a test page !"
+        },
+        "pageDescription": {
+          "en-US": "Let's explore how Front-Commerce integrates with Contentful and makes use of its rich content capabilities. There is another test page too!"
+        },
+        "seoIndex": {
+          "en-US": false
+        },
+        "seoFollow": {
+          "en-US": false
         }
       }
     }
@@ -1850,6 +3950,154 @@
           }
         }
       }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "1OjluTvNUheqmuzuMTcEiS",
+        "type": "Asset",
+        "createdAt": "2023-06-19T11:36:22.049Z",
+        "updatedAt": "2023-06-27T17:29:01.289Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2023-06-27T17:29:01.289Z",
+        "firstPublishedAt": "2023-06-19T11:36:40.809Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0xMP6maYt0Rz2RAMDhUVqD"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Carousel background"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zhhfzs0llupn/1OjluTvNUheqmuzuMTcEiS/d7189b0cb70b48b65eee0025b60e57fd/man-2425121_1280.jpg",
+            "details": {
+              "size": 327194,
+              "image": {
+                "width": 1280,
+                "height": 853
+              }
+            },
+            "fileName": "man-2425121_1280.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "id": "1kqpJMnu8qRKpWoLeMIoku",
+        "type": "Asset",
+        "createdAt": "2023-06-19T11:37:49.363Z",
+        "updatedAt": "2023-06-19T11:38:46.105Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-06-19T11:38:46.105Z",
+        "firstPublishedAt": "2023-06-19T11:38:46.105Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "tattooed-man-takes-a-stroll-in-summer"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/zhhfzs0llupn/1kqpJMnu8qRKpWoLeMIoku/96a14a2b09414dfe2f89f38af1ee3219/tattooed-man-takes-a-stroll-in-summer.jpg",
+            "details": {
+              "size": 261027,
+              "image": {
+                "width": 1620,
+                "height": 1080
+              }
+            },
+            "fileName": "tattooed-man-takes-a-stroll-in-summer.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -1945,5 +4193,380 @@
     }
   ],
   "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "6YV72FgdSEkFKZOxtYMNdI",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "createdAt": "2023-05-25T13:28:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedAt": "2023-05-25T13:28:01Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "6YVHWLy2FiqXLMp8ddLClg",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "createdAt": "2023-05-25T13:28:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedAt": "2023-05-25T13:28:01Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "6YWf27FX60P6vjKG0SH6hU",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "zhhfzs0llupn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "createdAt": "2023-05-25T13:28:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yZg8ljXaY2uDyPNjUqfco"
+          }
+        },
+        "updatedAt": "2023-05-25T13:28:01Z"
+      }
+    }
   ]
 }

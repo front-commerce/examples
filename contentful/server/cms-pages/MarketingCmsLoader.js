@@ -32,6 +32,18 @@ class MarketingCmsLoader {
   /**
    * @returns {Promise<Object>}
    */
+  loadHomePage = async () => {
+    const contentType = this.AppContentTypes.home;
+    const page = await this.ContentfulLoader.loadFirstContentMatching(
+      contentType
+    );
+
+    return contentType.dataFormatter(page);
+  };
+
+  /**
+   * @returns {Promise<Object>}
+   */
   loadContactPage = async () => {
     return this.loadPageById(this.config.contactPageId);
   };

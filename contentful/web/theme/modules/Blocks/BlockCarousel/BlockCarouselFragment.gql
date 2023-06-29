@@ -1,0 +1,9 @@
+fragment BlockCarouselFragment on BlockCarousel {
+  id
+  slides {
+    title
+    image
+    text
+    link
+  }
+}

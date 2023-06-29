@@ -1,0 +1,6 @@
+fragment SeoMetadataFragment on SeoMetadata {
+  title
+  description
+  index
+  follow
+}
