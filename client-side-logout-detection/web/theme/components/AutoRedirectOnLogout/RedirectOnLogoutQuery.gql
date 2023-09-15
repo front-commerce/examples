@@ -1,0 +1,10 @@
+query RedirectOnLogoutQuery {
+  # when not using the CustomerCache
+  isLoggedIn
+
+  # alternative if using the CustomerCache
+  # @see https://developers.front-commerce.com/docs/2.x/magento2/advanced#caching-current-customers-information
+  # me {
+  #   id
+  # }
+}
