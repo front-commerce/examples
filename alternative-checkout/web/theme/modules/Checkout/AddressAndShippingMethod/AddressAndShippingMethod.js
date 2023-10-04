@@ -39,10 +39,7 @@ const AddressAndShippingMethod = (props) => {
         billingAddress={props.billingAddress}
         setShippingAddress={props.setShippingAddress}
         setBillingAddress={props.setBillingAddress}
-        initialShipping={{
-          shippingMethod: props.shippingMethod,
-          shippingAdditionalInfo: props.shippingAdditionalInfo,
-        }}
+        initialShipping={props.initialShipping}
         onChooseShippingMethod={props.onChooseShippingMethod}
         onChangeShippingAddress={() => props.gotoStepNumber(0)}
         commandPending={props.commandPending}
